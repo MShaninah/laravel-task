@@ -1,0 +1,54 @@
+
+/* Styling of the overview */
+p{
+    line-height: 1.5;
+}
+h3{
+    font-size: 1.6rem;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article-img{
+    max-width: 100%;
+    height: auto;
+}
+
+.date {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    color: #235598;
+}
+
+.article .btn {
+    padding: 1em  0 .5em;
+    text-decoration: none;
+    border-bottom: 3px solid #f35214;
+    color: #f35214;
+    text-align: center;
+}
+ .article > p {
+     text-align: center;
+ }
+
+/* Mobile First */
+
+@media (min-width: 768px) {
+    .article{
+        width: 50%;
+    }
+    .article > div {
+        padding: 0 1em;
+    }
+}
+@media (min-width: 1200px) {
+    .article{
+        width: calc(100% / 3);
+    }
+    .article > div {
+        padding: 0 2em;
+    }
+}
