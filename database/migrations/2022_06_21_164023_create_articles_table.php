@@ -17,11 +17,10 @@ class CreateArticlesTable extends Migration
         Schema::create('articles', function (Blueprint $table) {
             $table->id();
             $table->text('title');
-            $table->binary('image');
+            $table->string('image_path');
             $table->mediumText('body');
             $table->timestamps();
         });
-        DB::statement("ALTER TABLE articles ADD image MEDIUMBLOB");
     }
 
     /**
