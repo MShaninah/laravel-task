@@ -1,0 +1,31 @@
+input, textarea {
+    border-radius: 0.3rem;
+    padding: 0.4rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.form-container{
+    height: 100%;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    border: 2px solid #000000;
+    min-width: 25em;
+    min-height: 30em;
+    background: #fffaf0;
+}
+form.flex{
+    flex-direction: column;
+}
+form > button {
+    background: #dbad5a;
+    padding: 1em 3em;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}

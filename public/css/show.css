@@ -1,0 +1,63 @@
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article > div {
+    max-width: 50em;
+}
+
+.article > div, .social-media{
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.social-media{
+    max-width: 30em;
+    margin-top: 4em;
+    height: 10em;
+    box-shadow: 5px 10px 10px 6px grey;
+    padding: 1em;
+}
+
+.icons > span{
+    width: 5em;
+    height: 2em;
+    text-align: center;
+}
+
+.icons svg{
+    width: 1.6em;
+}
+
+.facebook{
+    background: #3a5a97;
+}
+
+.twitter{
+    background: #49a2f1;
+}
+
+.whatsapp{
+    background: #39d366;
+}
+
+.xing{
+    background: #1f6366;
+}
+
+.linkedin{
+    background: #3475b5;
+    width: 1.6em;
+}
+
+.email{
+    background: #cccccc;
+}

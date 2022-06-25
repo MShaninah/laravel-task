@@ -10,7 +10,9 @@ h3{
     display: flex;
     flex-wrap: wrap;
 }
-
+.article{
+    position: relative;
+}
 .article-img{
     max-width: 100%;
     height: auto;
@@ -33,6 +35,29 @@ h3{
  .article > p {
      text-align: center;
  }
+
+.edit-btn{
+    position: absolute;
+    top: 4em;
+    left: 3em;
+    background: #ffffff;
+    border-radius: 1.3em;
+}
+.edit-btn a {
+    text-decoration: none;
+}
+
+.article form {
+    position: absolute;
+    top: 6em;
+    left: 3em;
+}
+.article form button {
+    border-radius: 1.3em;
+    padding: 0.1em 2em;
+    border: none;
+    cursor: pointer;
+}
 
 /* Mobile First */
 
