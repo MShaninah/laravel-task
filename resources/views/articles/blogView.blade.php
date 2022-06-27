@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="{{ asset('css/view.css') }}" rel="stylesheet">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/3f9e6216ea.js" crossorigin="anonymous"></script>
 </head>
 <body>
     @if( Auth::user() )
-        <a href="articles/create" class="btn">Neuer Artikel erstellen &rarr;</a>
+        <a href="articles/create" class="btn new">Neuer Artikel erstellen &rarr;</a>
     @endif
     <div class="container flex">
         @if($articles)
@@ -20,7 +21,8 @@
 
                     @if(Auth::user())
                         <div class="edit-btn">
-                            <a href="articles/{{ $article->id }}/edit">Bearbeiten</a>
+                            <a href="articles/{{ $article->id }}/edit"><i class="fa-regular fa-pen-to-square"></i></a>
+
                         </div>
                     @endif
 
@@ -29,7 +31,7 @@
                             @csrf
                             @method('delete')
                             <div class="delete-btn">
-                                <button type="submit" onclick="return confirm('Sind Sie sicher, dass Sie diesen Artikel löschen möchten?')">Löschen</button>
+                                <button type="submit" onclick="return confirm('Sind Sie sicher, dass Sie diesen Artikel löschen möchten?')"><i class="fa-solid fa-trash"></i></button>
                             </div>
                         </form>
                     @endif

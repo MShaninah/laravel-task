@@ -39,9 +39,7 @@ h3{
 .edit-btn{
     position: absolute;
     top: 4em;
-    left: 3em;
-    background: #ffffff;
-    border-radius: 1.3em;
+    left: 2em
 }
 .edit-btn a {
     text-decoration: none;
@@ -49,14 +47,23 @@ h3{
 
 .article form {
     position: absolute;
-    top: 6em;
-    left: 3em;
+    top: 4em;
+    left: 6em;
 }
 .article form button {
-    border-radius: 1.3em;
-    padding: 0.1em 2em;
     border: none;
     cursor: pointer;
+    background: transparent;
+    width: auto;
+}
+
+.fa-trash:before, .fa-pen-to-square:before{
+    font-size: 1.5rem;
+}
+
+.new{
+    font-size: 1.3rem;
+    padding: 0 1.6em;
 }
 
 /* Mobile First */
